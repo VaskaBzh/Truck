@@ -239,23 +239,22 @@ body {
     border: 9px solid #C8A35F;
     transform: scale(0.25) translateX(-110px) translateY(-30px) rotate(-135deg);
 }
-.section_service {
-    padding-bottom: 0;
-}
 .service_block {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 .avia {
+    position: relative;
     width: 25%;
     border: 1px solid #2F343A;
     min-height: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #393F47 url(../img/white.png) no-repeat center;
+    background: #393F47 url(../img/white.png) no-repeat center top 55px;
     transition-duration: 300ms;
+    
 }
 .avia_block {
     display: flex;
@@ -263,6 +262,7 @@ body {
     justify-content: space-around;
 }
 .avia_span {
+    margin-top:  128px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -274,22 +274,153 @@ body {
     color: #FFFFFF;
 }
 .elipse {
+    position: absolute;
     max-width: 70px;
     min-height: 70px;
     width: 100%;
-    margin-top: 35px;
-    margin-bottom: 23px;
+    top: 35px;
     border-radius: 100px;
     background: #FFFFFF;
     opacity: 0;
-    z-index: 0;
+    transition-duration: 300ms;
 }
 .title_service {
     margin-bottom: 60px;
 }
-.avia:hover {
-    background: #C8A35F url(../img/black.png) no-repeat center;
-}
 .avia:hover .elipse {
     opacity: 1;
+}
+.avia:hover {
+    background: #C8A35F url(../img/white.png) no-repeat center top 55px;
+}
+.plane_after {
+    position: absolute;
+    top: 55px;
+    opacity: 0;
+    transition-duration: 300ms;
+}
+.avia:hover .plane_after {
+    opacity: 1;
+}
+.section_company {
+    padding: 80px 0;
+    background: linear-gradient(to right,#2F343A 40%, #393F47 40%, #393F47 60%, #2F343A 60%);
+}
+.desc_company {
+    margin-top: 30px;
+}
+.company_column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 445px;
+    width: 100%;
+}
+.pics {
+    max-width: 600px;
+    width: 100%;
+    min-height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.pic {
+    max-width: 200px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0,25px solid #C8A35F
+}
+.pic:nth-child(3) {
+    background: #fff url(../img/truckFone.png) no-repeat center;
+}
+.pic:nth-child(4) {
+    background: #fff url(../img/truckFone.png) no-repeat center;
+}
+.title_pic {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #2F343A;    
+}
+.strong_pic {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin: 10px 0 15px 0;
+}
+.span_pic {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #000000;    
+}
+.section_pause {
+    padding: 60px 0;
+}
+.section_footer {
+    padding: 60px 0 55px 0;
+    background: #C8A35F;
+}
+.footer_block2 {
+    max-width: 516px;
+    width: 100%;
+    min-height: 36px;
+    align-items: flex-end;
+}
+.footer_block1 {
+    max-width: 480px;
+    width: 100%;
+    min-height: 36px;
+}
+.footer_nav_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 36px;
+    max-width: 291px;
+    width: 100%;
+}
+.p_footer {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #F2F2F2;
+}
+.p_footer_black {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2F343A;
+}
+.span_footer {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #2F343A;
 }
