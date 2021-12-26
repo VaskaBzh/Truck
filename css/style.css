@@ -52,6 +52,14 @@ body {
 .office_block {
     max-width: 132px;
     width: 100%;
+    transition-duration: 400ms;
+}
+.office_block:hover {
+    transform: scale(1.1);
+}
+.office_block span:hover {
+    transform: none;
+    color: #C8A35F;
 }
 .office_span {
     font-family: Roboto;
@@ -65,6 +73,10 @@ body {
 .logo_img {
     max-width: 160px;
     width: 100%;
+    transition-duration: 400ms;
+}
+.logo_img:hover {
+    transform: scale(1.1);
 }
 .office_img {
     max-width: 25px;
@@ -89,6 +101,21 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none;
+    transition-duration: 400ms;
+}
+a {
+    transition-duration: 400ms;
+}
+a:hover {
+    transform: scale(1.1);
+    color: #C8A35F;
+}
+span {
+    transition-duration: 400ms;
+    cursor: pointer;
+}
+span:hover {
+    transform: scale(1.1);
 }
 .section_truck {
     padding: 200px 0 50px 0;
@@ -170,6 +197,10 @@ body {
     color: #FFFFFF;
     border: none;
     cursor: pointer;
+    transition-duration: 400ms;
+}
+.button:hover {
+    transform: scale(1.1) translateX(10px);
 }
 .gold_line {
     background: #C8A35F;
@@ -211,6 +242,9 @@ body {
     max-width: 65px;
     width: 100%;
 }
+.next_block span:hover{
+    transform: none;
+}
 .arrow_line {
     border: 3px solid #C8A35F;
     width: 100%;
@@ -226,10 +260,20 @@ body {
 .next_block {
     max-width: 161px;
     width: 100%;
+    transition-duration: 400ms;
+    cursor: pointer;
+}
+.next_block:hover {
+    transform: scale(1.1) translateX(10px);
 }
 .before_block {
     max-width: 161px;
     width: 100%;
+    transition-duration: 400ms;
+    cursor: pointer;
+}
+.before_block:hover {
+    transform: scale(1.1) translateX(-10px);
 }
 .top_b {
     border: 9px solid #C8A35F;
@@ -405,6 +449,10 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: #F2F2F2;
+    transition-duration: 400ms;
+}
+.p_footer:hover {
+    transform: scale(1.1);
 }
 .p_footer_black {
     font-family: Roboto;
@@ -413,6 +461,10 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: #2F343A;
+    transition-duration: 400ms;
+}
+.p_footer_black:hover {
+    transform: scale(1.1);
 }
 .span_footer {
     font-family: Roboto;
